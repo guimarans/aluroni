@@ -1,0 +1,8 @@
+$padding-horizontal: 250px;
+
+@mixin padding($padding-vertical: 0) {
+    padding: $padding-vertical 1rem;
+    @media(min-width: 800px) {
+        padding: $padding-vertical $padding-horizontal;
+    }
+}

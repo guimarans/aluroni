@@ -1,5 +1,21 @@
+@import 'styles/variaveis';
+
 .menu {
-    padding: 20px 1rem;
-    max-width: 1120px;
-    margin: auto
+    @include padding(20px);
+}
+
+.header{
+    @include padding();
+    align-items: center;
+    background-image: url('/assets/cardapio/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 300px;
+    &__text {
+        color: white;
+        font-size: 5rem;
+        min-width: 400px;
+        width: 40%;
+    }
 }
