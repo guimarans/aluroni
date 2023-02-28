@@ -1,4 +1,5 @@
-@import 'styles/variaveis';
+@import "styles/variaveis";
+@import "styles/breakpoints";
 
 .menu {
     @include padding(20px);
@@ -17,5 +18,14 @@
         font-size: 5rem;
         min-width: 400px;
         width: 40%;
+    }
+}
+
+.cardapio {
+    @include padding(50px);
+    &__titulo {
+      color: $dark;
+      font-size: 3rem;
+      margin-bottom: 30px;
     }
 }
