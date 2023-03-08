@@ -1,6 +1,7 @@
 import cardapio from 'data/Cardapio.json';
 import styles from './Inicio.module.scss';
 import stylesTema from 'styles/Tema.module.scss';
+import nossaCasa from 'assets/nossa_casa.png';
 
 export default function Inicio() {
   let pratosRecomendados = [...cardapio];
@@ -20,10 +21,13 @@ export default function Inicio() {
         )};
       </div>
 
+      <h3 className={stylesTema.titulo}>Nossa casa</h3>
       <div className={styles.nossaCasa}>
-        <img src="" alt="" />
+        <img src={nossaCasa} alt="Casa do Aluroni" />
 
-        <address className={styles.nossaCassa__endereco}></address>
+        <address className={styles.nossaCassa__endereco}>
+          Rua Vergueiro, 3185 <br /> <br /> Vila Mariana - SP
+        </address>
       </div>
     </section>
   );
