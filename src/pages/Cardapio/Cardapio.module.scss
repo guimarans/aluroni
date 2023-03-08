@@ -1,10 +1,6 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-.menu {
-    @include padding(20px);
-}
-
 .header{
     @include padding();
     align-items: center;
