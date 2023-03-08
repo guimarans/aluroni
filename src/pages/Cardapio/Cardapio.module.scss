@@ -1,22 +1,6 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-.header{
-    @include padding();
-    align-items: center;
-    background-image: url('/assets/cardapio/header.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 300px;
-    &__text {
-        color: white;
-        font-size: 5rem;
-        min-width: 400px;
-        width: 40%;
-    }
-}
-
 .cardapio {
     @include padding(50px);
     &__titulo {
