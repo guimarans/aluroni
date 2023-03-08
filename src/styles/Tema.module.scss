@@ -1,0 +1,12 @@
+@import "./variaveis";
+@import "./breakpoints";
+
+.container {
+    @include padding(50px);
+}
+
+.titulo {
+  color: $dark;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
