@@ -4,7 +4,7 @@
 .header{
   @include padding();
   align-items: center;
-  background-image: url('/assets/cardapio/header.png');
+  background-image: url("/assets/cardapio/header.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
