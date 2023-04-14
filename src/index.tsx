@@ -1,8 +1,12 @@
-import { createRoot } from 'react-dom/client';
 import 'normalize.css';
 import './index.css';
-import Router from './routes';
+import ReactDOM from 'react-dom';
+import React from 'react';
+import AppRouter from './routes';
 
-const container = document.getElementById('root');
-
-createRoot(container!).render(<Router />);
+ReactDOM.render(
+  <React.StrictMode>
+    <AppRouter />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
